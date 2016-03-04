@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <item type="id" name="blockAll" />
+     <item type="id" name="radGroup1" />
+     <item type="id" name="blockUnsaved" />
+     <item type="id" name="blockFromList" />
+     <item type="id" name="cancelBlocker" />
+     <item type="id" name="btnAdd" />
+     <item type="id" name="btnShow" />
+     <item type="id" name="menu_show" />
+</resources>
