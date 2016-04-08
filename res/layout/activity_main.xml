@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:shrinkColumns="2"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/balloon"
+            android:gravity="center_horizontal"
+            android:minHeight="180dp" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_span="6"
+                android:gravity="center"
+                android:text="@string/smart"
+                android:textColor="#FFFFF0"
+                android:textSize="22sp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+
+    <RadioGroup
+        android:id="@+id/radGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry" >
+
+        <RadioButton
+            android:id="@+id/blockAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/block"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/blockUnsaved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blocku"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/blockFromList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blockl"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/cancelBlocker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blockc"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/addnumber"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/showlist"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+</LinearLayout>
