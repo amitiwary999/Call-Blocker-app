@@ -35,7 +35,8 @@ public class Blockers extends Activity implements RadioGroup.OnCheckedChangeList
 	
 //        ///////////////////////////////////
          myPrefs = this.getSharedPreferences("myPrefs", MODE_PRIVATE);
-         editor=myPrefs.edit();     
+         editor=myPrefs.edit(); 
+         editor.commit();
         RadioGroup radiogroup = (RadioGroup) findViewById(R.id.radGroup1);
         radiogroup.setOnCheckedChangeListener(this);
         // radio button setting

@@ -46,6 +46,8 @@ public class RemindersDbAdapter {
        public void onUpgrade(SQLiteDatabase db, int oldVersion,  int newVersion) {                                      
            // Not used, but you could upgrade the database with ALTER           
 //Scripts 
+    	   db.execSQL("drop table if exists"+DATABASE_TABLE);
+    	   onCreate(db); 
        }
 }
    public RemindersDbAdapter open() throws android.database.SQLException {
